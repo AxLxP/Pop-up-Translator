@@ -4,12 +4,12 @@ Select any text, copy it, hit a hotkey — and get the translation in a sleek po
 
 ## ✨ Features
 
-- 🖱️ Select & copy any text (e.g., in Okular or browser)
+- 🖱️ Select or copy any text (e.g., in Okular or browser)
 - 🎯 Press your custom hotkey (like `Ctrl+Shift+T`)
 - 💬 Instantly see a popup with the original and translated text
 - 📐 Automatically resizable window
 - 🔃 Scrollable for long text
-- 💡 Language auto-detect (source language)
+- 💡 Language auto-detect and selectable target language with last selection recognition
 - 🧠 Lightweight & offline-capable
 
 
