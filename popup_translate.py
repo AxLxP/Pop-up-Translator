@@ -8,7 +8,7 @@ def get_clipboard_text():
         result = subprocess.run(['xclip', '-selection', 'clipboard', '-o'], stdout=subprocess.PIPE)
         return result.stdout.decode('utf-8')
     except Exception as e:
-        return f"Hata: {str(e)}"
+        return f"Error: {str(e)}"
 
 def translate_text(text, dest='tr'):
     translator = Translator()
@@ -42,7 +42,7 @@ def show_popup(original, translated):
     original_box.config(yscrollcommand=original_scroll.set)
     original_scroll.grid(row=0, column=1, sticky="ns")
 
-    ttk.Label(root, text="Türkçe:", font=("Arial", 10, "bold")).grid(row=2, column=0, sticky="w", padx=10, pady=(10, 0))
+    ttk.Label(root, text="Translated Text:", font=("Arial", 10, "bold")).grid(row=2, column=0, sticky="w", padx=10, pady=(10, 0))
     
     translated_frame = ttk.Frame(root)
     translated_frame.grid(row=3, column=0, sticky="nsew", padx=10, pady=(0,10))
