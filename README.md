@@ -1,7 +1,20 @@
-GPT Clip Translator - Installation Guide
-=======================================
+An instant popup translator for Linux desktop environments.  
+Built with Python, Tkinter, and the Google Translate API (via `googletrans`).  
+Select any text, copy it, hit a hotkey — and get the translation in a sleek popup window.
 
-This is a step-by-step guide to install and use GPT Clip Translator – a popup translator for Linux desktop using Python and Tkinter.
+## ✨ Features
+
+- 🖱️ Select & copy any text (e.g., in Okular or browser)
+- 🎯 Press your custom hotkey (like `Ctrl+Shift+T`)
+- 💬 Instantly see a popup with the original and translated text
+- 📐 Automatically resizable window
+- 🔃 Scrollable for long text
+- 💡 Language auto-detect (source language)
+- 🧠 Lightweight & offline-capable
+
+
+Installation Guide
+=======================================
 
 Step 1: Install required system packages
 ----------------------------------------
