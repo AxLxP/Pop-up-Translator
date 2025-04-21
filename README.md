@@ -1,5 +1,5 @@
 An instant popup translator for Linux desktop environments.  
-Built with Python, Tkinter, and the Google Translate API (via `googletrans`).  
+Built with Python, Tkinter, and the Google Translate API (via `googletrans`) and made by ChatGPT.  
 Select any text, copy it, hit a hotkey — and get the translation in a sleek popup window.
 
 ## ✨ Features
