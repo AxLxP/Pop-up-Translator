@@ -16,21 +16,19 @@ def translate_text(text, dest='tr'):
         translated = translator.translate(text, dest=dest)
         return translated.text
     except Exception as e:
-        return f"Çeviri hatası: {str(e)}"
+        return f"Error: {str(e)}"
 
 def show_popup(original, translated):
     root = tk.Tk()
-    root.title("Çeviri")
-    root.geometry("700x400")  # Başlangıç boyutu
+    root.title("Translator")
+    root.geometry("700x400")
     root.minsize(500, 300)
     root.columnconfigure(0, weight=1)
     root.rowconfigure(1, weight=1)
     root.rowconfigure(3, weight=1)
 
-    # Başlıklar
-    ttk.Label(root, text="Seçilen Metin:", font=("Arial", 10, "bold")).grid(row=0, column=0, sticky="w", padx=10, pady=(10, 0))
+    ttk.Label(root, text="Selected Text:", font=("Arial", 10, "bold")).grid(row=0, column=0, sticky="w", padx=10, pady=(10, 0))
     
-    # Orijinal metin kutusu
     original_frame = ttk.Frame(root)
     original_frame.grid(row=1, column=0, sticky="nsew", padx=10)
     original_frame.rowconfigure(0, weight=1)
@@ -44,10 +42,8 @@ def show_popup(original, translated):
     original_box.config(yscrollcommand=original_scroll.set)
     original_scroll.grid(row=0, column=1, sticky="ns")
 
-    # Çeviri başlığı
-    ttk.Label(root, text="Türkçesi:", font=("Arial", 10, "bold")).grid(row=2, column=0, sticky="w", padx=10, pady=(10, 0))
+    ttk.Label(root, text="Türkçe:", font=("Arial", 10, "bold")).grid(row=2, column=0, sticky="w", padx=10, pady=(10, 0))
     
-    # Çevrilmiş metin kutusu
     translated_frame = ttk.Frame(root)
     translated_frame.grid(row=3, column=0, sticky="nsew", padx=10, pady=(0,10))
     translated_frame.rowconfigure(0, weight=1)
