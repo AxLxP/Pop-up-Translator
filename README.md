@@ -26,8 +26,8 @@ This installs the translation library in an isolated environment.
 
 Step 4: Clone the Repository
 ----------------------------
-    git clone https://github.com/YOUR_USERNAME/gpt-clip-translator.git
-    cd gpt-clip-translator
+    git clone https://github.com/AxLxP/Pop-up-Translator.git
+    cd Pop-up-Translator
 
 Step 5: Make the Python script executable
 -----------------------------------------
