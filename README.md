@@ -9,7 +9,7 @@ Select any text, copy it, hit a hotkey — and get the translation in a sleek po
 - 💬 Instantly see a popup with the original and translated text
 - 📐 Automatically resizable window
 - 🔃 Scrollable for long text
-- 💡 Language auto-detect and selectable target language with last selection recognition
+- 💡 Language auto-detect and selectable target language with last selection recognition. Also has line break correction.
 - 🧠 Lightweight & offline-capable
 
 ![Translator Screenshot](Screenshot.png)
