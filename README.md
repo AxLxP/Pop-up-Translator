@@ -12,6 +12,7 @@ Select any text, copy it, hit a hotkey — and get the translation in a sleek po
 - 💡 Language auto-detect and selectable target language with last selection recognition
 - 🧠 Lightweight & offline-capable
 
+![Translator Screenshot](Screenshot.png)
 
 Installation Guide
 =======================================
