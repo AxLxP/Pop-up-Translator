@@ -2,15 +2,16 @@ An instant popup translator for Linux desktop environments.
 Built with Python, Tkinter, and the Google Translate API (via `googletrans`) and made by ChatGPT.  
 Select any text, copy it, hit a hotkey — and get the translation in a sleek popup window.
 
-## ✨ Features
+## Features
 
-- 🖱️ Select or copy any text (e.g., in Okular or browser)
-- 🎯 Press your custom hotkey (like `Ctrl+Shift+T`)
-- 💬 Instantly see a popup with the original and translated text
-- 📐 Automatically resizable window
-- 🔃 Scrollable for long text
-- 💡 Language auto-detect and selectable target language with last selection recognition. Also has line break correction.
-- 🧠 Lightweight & offline-capable
+- Select or copy any text (e.g., in Okular or browser)
+- Press your custom hotkey (like `Ctrl+Shift+T`)
+- Instantly see a popup with the original and translated text
+- Automatically resizable window
+- Scrollable for long text
+- Language auto-detect and selectable target language with last selection recognition. Also has line break correction.
+- Lightweight & offline-capable
+- Stays always on top and actively translates the new copied text. You can open put it in a side and translate what you copied.
 
 ![Translator Screenshot](Screenshot.png)
 
