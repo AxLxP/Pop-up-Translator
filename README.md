@@ -70,3 +70,62 @@ Step 7: Create a Global Hotkey (for Cinnamon)
 Now whenever you copy text and press your hotkey, the translator popup appears.
 
 Done!
+
+
+## 🪟 Windows Installation (using deep-translator)
+
+### Requirements
+
+- Python 3.8+: https://www.python.org/downloads/
+- pip (comes with Python)
+- Git (optional but recommended): https://git-scm.com/downloads
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Pop-up-Translator.git
+cd Pop-up-Translator
+```
+
+Alternatively, download the ZIP file and extract it manually.
+
+### 2. Install Required Python Packages
+
+```bash
+pip install deep-translator pyperclip
+```
+
+### 3. Run the Script
+
+```bash
+python popup_translate.py
+```
+
+A popup will appear and automatically translate any text you copy to the clipboard (Ctrl+C).
+
+### 4. Add a Keyboard Shortcut (Optional)
+
+#### Using AutoHotkey to Trigger with Ctrl + Shift + T
+
+1. Download and install AutoHotkey from https://www.autohotkey.com
+2. Create a new `.ahk` file on your desktop (e.g., `popup_hotkey.ahk`)
+3. Right-click the file → Edit Script → paste the following:
+
+```ahk
+^+t::
+Run, "C:\full\path\to\python.exe" "C:\full\path\to\popup_translate.py"
+return
+```
+
+> Note: Replace `C:\full\path\to\...` with the actual paths to your Python executable and script file.
+
+4. Double-click the `.ahk` file to launch it.  
+   Now pressing **Ctrl + Shift + T** will open the translator popup.
+
+### 5. Start Automatically with Windows (Optional)
+
+1. Press `Win + R`, type `shell:startup`, and press Enter.
+2. Copy your `.ahk` file into the folder that opens.
+
+The hotkey will now run automatically every time Windows starts.
+
